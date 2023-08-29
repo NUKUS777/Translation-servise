@@ -252,25 +252,6 @@ const HeaderBot = styled.div`
   box-shadow: 0px 15px 10px -15px black;
 `;
 
-// const HeaderUlB = styled.ul`
-//   /* display: flex; */
-//   /* list-style: none; */
-//   /* position: fixed; */
-//   @media only screen and (max-width: 768px) {
-//     display: block;
-//     position: fixed;
-//     top: 0;
-//     left: 100%;
-//     width: 70%;
-//     height: 100%;
-//     margin: 0;
-//     padding: 80px 0;
-//     list-style: none;
-//     background-color: #eceff1;
-//     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-//     transition-duration: 0.25s;
-//   }
-// `;
 
 const HeaderLiB = styled.li`
   margin-left: 30px;

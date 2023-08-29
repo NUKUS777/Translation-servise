@@ -104,8 +104,8 @@ export const Login = () => {
   const { token, setToken } = useAuth();
   const elEmail = useRef();
   const elPassword = useRef();
-  
-  const navigate = useNavigate()
+
+  const navigate = useNavigate();
 
   const handleUserLogin = (evt) => {
     evt.preventDefault();
@@ -115,16 +115,19 @@ export const Login = () => {
     // formData.append("email", email);
     // formData.append("password", password);
     axios
-      .post("http://24.199.117.223:8080/api/v1/auth/authenticate", {
-        phoneNum: elEmail.current.value,
-        password: elPassword.current.value,
-      })
-      .then(function(response){
-        if(response.data){
+      .post(
+        "http://24.199.117.223:8080/api/v1/auth/authenticate",
+        {
+          phoneNum: elEmail.current.value,
+          password: elPassword.current.value,
+        }
+      )
+      .then(function (response) {
+        if (response.data) {
           setToken(response.data);
           navigate("/");
         }
-      }) 
+      })
       .catch((error) => console.log(error));
   };
 
