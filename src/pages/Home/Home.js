@@ -39,8 +39,7 @@ export const Home = () => {
                   Suspendisse morbi mauris gravida tellus integer ucibus tellus
                   inut condimentum blandit mus auctor nulla.
                 </Form_text>
-                <label for="name">Ismingizni kiriting</label>
-                <input type="text" id="name"/>
+                <input className="hero__input" type="text" id="name" placeholder="Ismingizni kiriting"/>
                 <textarea name="message"></textarea>
                 <label className="hero_label">
                   <select name="Translate from" required>
@@ -387,7 +386,9 @@ const Hero_inner = styled.div`
     display: block;
   }
 `;
-const Hero_left = styled.div``;
+const Hero_left = styled.div`
+ magin:0 auto;
+`;
 const Hero_title = styled.h2`
   margin: 0;
   margin-top: 70px;
@@ -441,18 +442,18 @@ const Hero_form = styled.form`
     linear-gradient(90deg, #f46141 0%, #ffc202 100%)
   );
   max-width: 420px;
-  height: 550px;
-  padding: 40px 30px;
+  min-height: 550px;
+  padding: 40px 20px;
   border-radius: 20px;
   margin-bottom: 50px;
   @media only screen and (max-width: 950px) {
     max-width: 300px;
   }
   @media only screen and (max-width: 768px) {
-    width: 400px;
-    margin: auto;
+    width: 100%;
+    margin:0 auto;
     margin-top: 40px;
-    max-width: 60%;
+    max-width: 450px;
   }
   @media only screen and (max-width: 576px) {
     height: 440px;

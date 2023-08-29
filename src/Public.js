@@ -7,6 +7,7 @@ import { Link, NavLink, Route, Routes } from "react-router-dom";
 import { Login } from "./components/Login/Login";
 import { Register } from "./components/Register/Register";
 
+
 const Public = () => {
   return (
     <>
@@ -15,7 +16,7 @@ const Public = () => {
           path="/*"
           element={
             <>
-              <Header id="nima">
+              <Header  id="nima">
                 <Header_page />
               </Header>
               <Footer>
@@ -37,7 +38,11 @@ export default Public;
 
 const Header = styled.header`
   background-color: #fff;
+  overflow-x: hidden;
+
 `;
 const Footer = styled.footer`
   background-color: #fb991d;
+  overflow-x: hidden;
+
 `;

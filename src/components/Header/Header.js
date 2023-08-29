@@ -199,6 +199,8 @@ const Hamburger_menu = styled.div`
       width: 100%;
       height: 100%;
       margin: 0;
+      margin:0 auto;
+      text-align:center;
       padding: 80px 0;
       list-style: none;
       background-color: #eceff18e;

@@ -9,6 +9,17 @@
 }
 .hero_title {
 }
+.hero__input {
+  outline: none;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  width: 410px;
+  height: 55px;
+  border: none;
+  padding: 0 10px;
+
+}
 .gradient-text {
   background: var(--collour-button, linear-gradient(90deg, #F46141 0%, #FFC202 100%));
   background-size: 100%;
@@ -36,6 +47,9 @@
   background: #ffffff;
 }
 .hero_form {
+  max-width: 400px;
+  padding: 10px;
+  min-height: 400px;
 }
 .form_title {
 }
@@ -45,7 +59,7 @@
   display: block;
   margin-bottom: 20px;
   border-radius: 8px;
-  width: 410px;
+  width: 90%;
   height: 55px;
   border: none;
   padding: 0 10px;
@@ -71,9 +85,7 @@
     justify-content: center;
   }
   .hero_label > select {
-    width: 400px;
-    max-width: 100%;
-    margin-right: 0;
+    max-width: 300px;
   }
 }
 @media only screen and (max-width: 576px) {
